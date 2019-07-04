@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1230182_5mk9jl9091y.css">
+    <title>登录</title>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <a href="index.html">
+                <i class="iconfont icon-arrowLeft1"></i>
+            </a>       
+        </div>
+        <div class="header_title">美团网</div>
+        <div class="header_right">
+            <a href="">
+                <i class="iconfont icon-daohang"></i>
+                <span>导航</span>
+            </a>
+        </div>
+    </header>
+    <div class="login_box">
+        <nav>
+            <div class="tab" id="tab">
+                <a href="javascript:;">美团账号登录</a>
+                <a href="javascript:;">手机验证登录</a>
+            </div>
+            <div class="slid">
+                <div class="slid slid_left"></div>
+                <div class="slid slid_right"></div>
+            </div>
+        </nav>
+        <div class="form_box" id="form">
+            <form action="">
+                <input type="text" placeholder="账号名/手机号/Email">
+                <input type="text" placeholder="请输入您的密码">
+                <div class="login_btn">
+                    <button>登录</button>
+                </div>
+            </form>
+            <form action="" class="form2" style="display: none;">
+                <input type="text" placeholder="请输入手机号">
+                <input type="text" placeholder="请输入短信验证码">
+                <div class="vricode">
+                    <a href="">获取验证码</a>
+                </div>
+                <div class="login_btn">
+                    <button disabled>登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="login_footer">
+        <a href="">立即注册</a>
+        <a href="">找回密码</a>    
+    </div>
+    <script>
+        (function () {
+            var html = document.documentElement;
+            var hWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = hWidth / 10 + 'px';
+        })()
+    </script>
+    <script>
+        (function(){
+       var oTab=document.getElementById('tab');
+       var aTab=oTab.getElementsByTagName('a');
+       var oSlid=document.getElementsByClassName('slid');
+       var oForm=document.getElementById('form');
+       var aForm=oForm.getElementsByTagName('form');
+       for(var i=0;i<aTab.length;i++){
+        aTab[i].index=i;
+           aTab[i].onclick=function(){
+               for(var i=0;i<aTab.length;i++){
+                   aTab[i].style.color="#333";
+                   oSlid[i].style.background="#ddd8ce";
+                   aForm[i].style.display="none";
+               };
+            this.style.color="#06c1ae";
+            oSlid[i].style.background="#06c1ae";
+            aForm[this.index].style.display="block";
+           };
+       }
+        })()   
+    </script>
+</body>
+</html>

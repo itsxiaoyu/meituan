@@ -414,6 +414,10 @@ section{
                     float: right;
                 }
             }
+            p{
+                font-size: 18px;
+                color: #333;
+            }
         }
         .ad_list{
             li{
@@ -519,5 +523,240 @@ footer{
                 z-index: 2;
             }
         }
+    }
+}
+
+// index.html
+header {
+    .local_city {
+        width: 20%;
+        font-size: 18/@rem;
+        display: inline-block;
+        line-height: 50/@rem;
+        padding-left: 10/@rem;
+        a{
+            color: #fff;
+        }
+        i{
+            font-size: 14px;
+        }
+    }
+    .box_search{
+        width: 60%;
+        height: 30/@rem;
+        margin:10/@rem 0;
+        border-radius: 4px;
+        background: rgba(0,0,0,.15);
+        a{
+            display: inline-block;
+            height: 30/@rem;
+            line-height: 30/@rem;
+            color: #fff;
+            margin-left: -32/@rem;
+            span{
+                color: #68dbce;
+            }
+        }
+    }
+    .my_right{
+        width: 20%;
+        a{
+            width: 47/@rem;
+            height: 100%;
+            display: inline-block;
+            color: #fff;
+        }
+        i{
+            font-size: 20/@rem;
+            margin-top: 5/@rem;
+        }
+        i,span{
+            width: 100%;
+            height: 40%;
+            display: inline-block;
+        }
+    }
+}
+section{
+    .banner_load{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .btn1{
+            position: absolute;
+            left: 17%;
+            bottom: 10%;
+            width: 31%;
+            height: 34%;
+            z-index: 1;
+        }
+        .btn2{
+            position: absolute;
+            right: 17%;
+            bottom: 10%;
+            width: 31%;
+            height: 34%;
+            z-index: 1;
+        }
+    }
+    .nav_list{
+        .rows{
+            display: flex;
+            flex-flow:row nowrap;
+            justify-content: space-around;
+            padding:5/@rem 0;
+            .row_list{
+                flex: 0 1 1;
+                a{
+                    display: block;
+                    width: 40/@rem;
+                    height: 40/@rem;
+                    margin: 0 10/@rem;
+                    background: #fd9d21;
+                    border-radius: 50%; 
+                    position: relative;
+                    i{
+                        font-size: 20px;
+                        color: #fff;
+                        position: absolute;
+                        left:25%;
+                        top:25%;
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-size: 12/@rem;
+                    padding:5/@rem 0;
+                }
+                .l2{
+                    background: #ff6767;
+                }
+                .l3{
+                    background: #8a90fa;
+                }
+                .l4{
+                    background: #fed030;
+                }
+                .l5{
+                    background: #fd9d21;
+                }
+                .l6{
+                    background: #4dc6ee;
+                }
+                .l7{
+                    background: #ff80c2;
+                }
+                .l8{
+                    background: #00d3be;
+                }
+            }
+        }
+      
+    }
+}
+
+//login.html
+.login_box {
+    nav {
+        .tab {
+            height: 40/@rem;
+            display: flex;
+            a {
+                margin: 0 auto;
+                display: inline-block;
+                height: 40/@rem;
+                line-height: 40/@rem;
+                text-align: center;
+                color: #333;
+                &:nth-of-type(1){
+                    color: #06c1ae;
+                }
+            }
+        }
+        .slid{
+            display: flex;
+            height: 4/@rem;
+            background: #ddd8ce;
+            .slid_left{
+                width: 45%;
+                background: #06c1ae;
+                margin-left: 10/@rem;
+            }
+            .slid_right{
+                width: 45%;
+                margin-left: 10/@rem;
+            }
+        }
+    }
+    .form_box{
+        form{
+            input{
+                height: 40/@rem;
+                width: 100%;
+                outline: none;
+                border: none;
+                text-indent: 10/@rem;
+                font-size: 15/@rem;
+            }
+            .login_btn{
+                margin-top: 20px;
+                button{
+                    display: block;
+                    width: 96%;
+                    border: none;
+                    border-radius: 4px;
+                    height: 40/@rem;
+                    background: #06c1ae;
+                    color: #fff;
+                    font-size: 20/@rem;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .form2{
+            position: relative;
+            input{
+                width: 92%;
+                height: 30/@rem;
+                margin-left: 10/@rem;
+                margin-top: 10/@rem;
+                &:nth-of-type(2){
+                    background-color: rgb(235, 235, 228);
+                }
+            }
+            .vricode{
+                position: absolute;
+                right: 10/@rem;
+                top:8/@rem;
+                a{
+                    display: inline-block;
+                    width: 90/@rem;
+                    height: 30/@rem;
+                    line-height: 30/@rem;
+                    background:#ddd8ce;
+                    color: #999;
+                    border-radius: 4px;
+                    text-align: center;
+                }
+            }
+            .login_btn{
+                margin-top: 20/@rem;
+                button{
+                    background: #ddd8ce;
+                    color: #999;
+                }         
+            }
+        }
+    }
+}
+.login_footer{
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: #06c1ae;
     }
 }
